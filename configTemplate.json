@@ -1,0 +1,9 @@
+{
+  "enabledModules": ["hbase"],
+  "moduleConfigs": {
+    "hbase": {
+      "hbase.zookeeper.quorum": "172.31.73.75",
+      "hbase.zookeeper.property.clientPort": "2181"
+    }
+  }
+}
