@@ -2,8 +2,12 @@
   "enabledModules": ["hbase"],
   "moduleConfigs": {
     "hbase": {
-      "hbase.zookeeper.quorum": "172.31.73.75",
-      "hbase.zookeeper.property.clientPort": "2181"
+      "hbase.zookeeper.quorum": "127.0.0.1",
+      "hbase.zookeeper.property.clientPort": 2181,
+      "hbase.regionserver.port": 16201,
+      "hbase.rpc.timeout": 2000,
+      "hbase.client.operation.timeout": 3000,
+      "hbase.client.scanner.timeout.period": 2000
     }
   }
 }

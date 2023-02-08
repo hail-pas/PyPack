@@ -53,6 +53,7 @@ public class Config {
 
     public void loadConfig() {
         String environment = System.getProperty("releaseEnvironment");
+        if (environment == null) environment = "development";
         logger.info("Environment is: " + environment + "\n");
         Path path = Paths.get(this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath());
         path = Paths.get(path.getParent().toString(), "config", environment + ".json");
